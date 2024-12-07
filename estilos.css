@@ -1,334 +1,350 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
-*{
+/* Estilo general del cuerpo */
+
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
+    background-color: #E6E6FA; /* Morado claro */
+    color: #333; /* Texto en color oscuro para contraste */
 }
-body{
-    font-family: 'Poppins', sans-serif;
+
+/* Estilo del encabezado */
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url("img/Dani/fondo.jpg"); /* Cambia 'tu-imagen.jpg' por el nombre de tu archivo */
+    background-size: cover; /* Ajusta la imagen para que cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    color: #FFFFFF; /* Texto blanco para contraste */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para resaltar el texto */
 }
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
 }
-.cabeza{
-    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)) ,url(images/bg.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 70vh;
-    display: flex;
-    align-items: center;
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0 0 0;
+    padding: 50px;
 }
-.menu{
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo{
-    color: white;
-    font-size: 25px;
-    font-weight: 800;
-}
-.menu .navbar ul li{
-    position: relative;
-    float: left;
-}
-.menu .navbar ul li a{
-    font-size: 18px;
-    padding: 20px;
-    color: white;
-    display: block;
-    font-weight: 600;
-}
-.menu .navbar ul li a:hover{
-    color: #CE967B;
-}
-#menu{
-    display: none;
-}
-.menu-icono{
-    width: 25px;
-}
-.menu label{
-    cursor: pointer;
-    display: none;
-}
-.header-content{
+
+/* Estilo de la sección de galería */
+main section {
     text-align: center;
 }
-.header-content h1{
-    font-size: 75px;
-    line-height: 80px;
-    color: #F9FAFC;
-    text-transform: uppercase;
-    margin-bottom: 35px;
+
+main section h2 {
+    font-size: 2em;
+    color: #800080; /* Púrpura */
 }
-.header-content p{
-    font-size: 17px;
-    color: #C5C5C5;
-    padding: 0 250px;
-    margin-bottom: 25px;
-}
-.btn-1{
+
+main section div {
     display: inline-block;
-    padding: 11px 35px;
-    background-color: #CE967B;
-    color: white;
-    text-transform: uppercase;
-}
-
-.btn-1:hover{
-    background-color: #dba78e;
-}
-.coffe{
-    padding: 100px 0;
-    background-color: #E1E2E6;
-    position: relative;
-}
-.coffe-content{
+    margin: 15px;
     text-align: center;
 }
-.coffe-content h2{
-    font-size: 55px;
-    line-height: 70px;
-    color: #323337;
-    text-transform: uppercase;
-    padding: 0 250px;
-    margin-bottom: 15px;
-}
-.txt-p{
-    font-size: 16px;
-    color: #414247;
-    padding: 0 250px;
-    margin-bottom: 35px;
-}
-.coffe-group{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-.coffe-1{
-    padding:0 25px;
-}
-.coffe-1 img{
-    width: 200px;
+
+main section img {
+    border: 5px solid #BA55D3; /* Morado medio */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%;
+    height: auto;
 }
 
-.coffe-img{
-    position: absolute;
-    top: 0;
-    right: 0;
+main section p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #4B0082; /* Morado intenso */
 }
-.coffe-1 h3{
-    color: #323337;
+
+/* Estilo para la galería */
+.galeria {
+    display: flex;
+    flex-direction: column; /* Ordena los elementos verticalmente */
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.galeria div {
+    text-align: center; /* Centra el texto debajo de cada imagen */
+    width: 100%; /* Cada imagen ocupará todo el ancho del contenedor */
+}
+
+.galeria img {
+    width: 300px; /* Ancho fijo para las imágenes */
+    height: 400px; /* Alto fijo para las imágenes */
+    object-fit: cover; /* Recorta la imagen para llenar el espacio definido */
+    border: 4px solid #BA55D3; /* Borde morado */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+.galeria p {
+    margin-top: 10px;
+    font-style: italic;
+    color: #4B0082; /* Texto morado intenso */
+}
+
+/* Estilo para la nueva sección de mensaje de amor */
+.mensaje-amor {
+    background-color: #E0BBE4; /* Fondo color lavanda claro */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Reduce el relleno de la sección */
+    margin-top: 10px; /* Reduce el espacio superior */
+    margin-bottom: 10px; /* Reduce el espacio inferior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+.mensaje-amor h2 {
+    font-size: 24px;
+    color: #BA55D3; /* Color morado para el encabezado */
+}
+
+.mensaje-amor p {
     font-size: 20px;
-    margin-bottom: 15px;
+    font-style: italic;
+    color: #4B0082; /* Texto morado */
+    max-width: 800px; /* Limita el ancho del texto */
+    margin: 20px auto; /* Centra el párrafo */
 }
-.services{
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/bg2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 100px 0;
-}
-.services-content{
+
+/* Estilo para el slider */
+.slider {
+    background-color: #f4f4f4;
     text-align: center;
-}
-.services-content h2{
-    font-size: 55px;
-    line-height: 70px;
-    color: white;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-}
-.services-content p{
-    font-size: 16px;
-    color: #C5C5C5;
-    margin-bottom: 50px;
-    padding: 0 100px;
-}
-.services-group{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
-}
-.services-1{
-    padding: 0 100px;
-}
-.services-1 img{
-    width: 25px;
-    margin-bottom: 15px;
-}
-.services-1 h3{
-    color: #E1E2E6;
-    font-size: 18px;
-}
-.general{
-    display: flex;
-}
-.general-1{
-    width: 50%;
-    padding: 100px 250px 100px 100px;
-    background: #E1E2E6;
-}
-.general-2{
-    background-image: url(images/coffe-1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-}
-.general-3{
-    background-image: url(images/coffee-2.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 50%;
-}
-h2{
-    font-size: 55px;
-    line-height: 70px;
-    color: #323337;
-    text-transform: uppercase;
+    padding: 30px 20px;
+    margin-top: 20px;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
-p{
-    font-size: 16px;
-    color: #414247;
-    margin: 25px 0 45px 0;
+
+.slider h2 {
+    font-size: 24px;
+    color: #BA55D3;
 }
-.blog{
-    padding: 100px 0;
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: auto;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.4s ease-in-out; /* Movimiento suave */
+}
+
+.slide {
+    flex-shrink: 0; /* Evita que las imágenes se reduzcan */
+    width: 100%;
+}
+
+.slider-wrapper img {
+    width: 250px; /* Tamaño fijo para todas las fotos */
+    height: 350px; /* Tamaño fijo para todas las fotos */
+    object-fit: cover; /* Asegura que la imagen se recorte para no distorsionarse */
+    margin: 0;
+}
+
+/* Animación del slider (de derecha a izquierda) */
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-100%); }
+    40% { transform: translateX(-200%); }
+    60% { transform: translateX(-300%); }
+    80% { transform: translateX(-400%); }
+    100% { transform: translateX(0); }
+}
+
+/* Reemplazo de animación por intervalos de 4 segundos */
+@keyframes slide {
+    0% { transform: translateX(0); }
+    3.33% { transform: translateX(-100%); }
+    6.66% { transform: translateX(-200%); }
+    10% { transform: translateX(-300%); }
+    13.33% { transform: translateX(-400%); }
+    16.66% { transform: translateX(-500%); }
+    20% { transform: translateX(-600%); }
+    23.33% { transform: translateX(-700%); }
+    26.66% { transform: translateX(-800%); }
+    30% { transform: translateX(-900%); }
+    33.33% { transform: translateX(-1000%); }
+    36.66% { transform: translateX(-1100%); }
+    40% { transform: translateX(-1200%); }
+    43.33% { transform: translateX(-1300%); }
+    46.66% { transform: translateX(-1400%); }
+    50% { transform: translateX(-1500%); }
+    53.33% { transform: translateX(-1600%); }
+    56.66% { transform: translateX(-1700%); }
+    60% { transform: translateX(-1800%); }
+    63.33% { transform: translateX(-1900%); }
+    66.66% { transform: translateX(-2000%); }
+    70% { transform: translateX(-2100%); }
+    73.33% { transform: translateX(-2200%); }
+    76.66% { transform: translateX(-2300%); }
+    80% { transform: translateX(-2400%); }
+    83.33% { transform: translateX(-2500%); }
+    86.66% { transform: translateX(-2600%); }
+    90% { transform: translateX(-2700%); }
+    93.33% { transform: translateX(-2800%); }
+    96.66% { transform: translateX(-2900%); }
+    100% { transform: translateX(0); }
+}
+
+.slider-wrapper {
+    animation: slide 60s infinite; /* 4 segundos por cada imagen */
+}
+
+/* Estilo para la sección Foto con Audio */
+.foto-audio {
+    display: flex;
+    flex-direction: column; /* Asegura disposición vertical */
+    gap: 20px; /* Espaciado entre cada elemento */
+    padding: 10px; /* Margen interno para evitar contenido pegado a los bordes */
+}
+.foto-audio-container {
+    display: flex;
+    flex-direction: column; /* Organización vertical */
+}
+
+.foto-audio-item {
     text-align: center;
 }
-.blog-content{
-    display: flex;
-    justify-content: space-between;
+
+.foto {
+    width: 250px; /* Establece un tamaño fijo para las fotos */
+    height: 100%; /* Establece un tamaño fijo para las fotos */
+    object-fit: cover; /* Hace que la imagen se ajuste sin distorsionarse */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar la imagen */
 }
-.blog-1{
-    padding: 15px 55px;
+
+.descripcion {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #4B0082; /* Color morado */
 }
-.blog-1 img{
-    width: 250px;
-    border-radius: 15px;
-    margin-bottom: 15px;
+
+audio {
+    width: 100%;
+    max-width: 250px;
+    margin-top: 10px;
 }
-.blog-1 h3{
-    font-size: 25px;
-    color: #323337;
+/* Estilo para el mensaje bonito */
+.mensaje-bonito {
+    background-color: #E0BBE4; /* Fondo color lavanda claro */
+    text-align: center; /* Centra el texto */
+    padding: 40px; /* Añade relleno alrededor del texto */
+    margin-top: 30px; /* Añade espacio superior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
 }
-.footer{
-    padding: 100px;
-    background-color: #000000;
+
+.mensaje-bonito h2 {
+    font-size: 2.5em;
+    color: #BA55D3; /* Color morado para el encabezado */
 }
-.footer-contetn{
-    display: flex;
-    justify-content: space-between;
+
+.mensaje-bonito p {
+    font-size: 1.5em;
+    color: #4B0082; /* Texto morado */
+    max-width: 800px; /* Limita el ancho del texto */
+    margin: 20px auto; /* Centra el párrafo */
+    line-height: 1.6; /* Mejora la legibilidad */
 }
-.link h3{
-    font-size: 18px;
+/* Estilo para el contenedor de la contraseña */
+.password-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.password-container input {
+    padding: 10px;
+    font-size: 1.2em;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid #BA55D3;
+}
+
+.password-container button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #BA55D3;
     color: white;
-    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.link a{
-    font-size: 16px;
-    color: #C5C5C5;
-    display: block;
-    margin-bottom: 15px;
+
+.password-container button:hover {
+    background-color: #800080; /* Cambio de color al pasar el ratón */
 }
-@media(max-width:991px){
-    .menu{
-        padding: 30px;
-    }
-    .menu label{
-        display: initial;
-    }
-    .menu .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #323337;
-        display: none;
-    }
-    .menu .navbar ul li{
-        width: 100%;
-    }
-    .menu:checked ~ .navbar{
-        display: initial;
-    }
-    .cabeza{
-        min-height: 0;
-    }
-    .header-content{
-        padding: 100px 30px;
-    }
-    .header-content p{
-        padding: 0;
-    }
-    .coffe{
-        padding: 30px;
-    }
-    .coffe-content h2{
-        padding: 0;
-    }
-    .txt-p{
-        padding: 0;
-    }
-    .coffe-group{
-        flex-direction: column;
-        margin-bottom: 0;
-    }
-    .coffe-img{
-        display: none;
-    }
-    .services{
-        padding: 30px;
-    }
-    .services-content p{
-        padding: 0;
-    }
-    .services-group{
-        flex-direction: column;
-        margin-bottom: 0;
-    }
-    .services-1{
-        margin-bottom: 25px;
-    }
-    .general{
-        flex-direction: column;
-    }
-    .general-1{
-        width: 100%;
-        padding: 30px;
-        text-align: center;
-    }
-    .general-2, .general-3{
-        display: none;
-    }
-    .blog{
-        padding: 30px;
-    }
-    .blog-content{
-        flex-direction: column;
-    }
-    .blog-1{
-        padding: 0;
-    }
-    .footer{
-        flex-direction: column;
-        text-align: center;
+
+/* Media Query para iPhone 13 */
+@media only screen and (max-width: 390px) {
+    /* Reducción de tamaños de fuente */
+    body {
+        font-size: 0.9em;
     }
 
-    .link ul{
-        margin-top: 20px;
+    header h1 {
+        font-size: 2em; /* Reduce el tamaño del título */
+    }
+
+    header p {
+        font-size: 1em;
+        padding: 20px;
+    }
+
+    .galeria {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Imágenes más pequeñas */
+    }
+
+    .galeria img {
+        width: 150px; /* Ajusta las imágenes */
+        height: 225px;
+    }
+
+    .mensaje-amor h2 {
+        font-size: 1.8em; /* Ajusta el título */
+    }
+
+    .mensaje-amor p {
+        font-size: 1.2em;
+    }
+
+    .slider-wrapper img {
+        width: 200px;
+        height: 300px; /* Ajusta el tamaño del slider */
+    }
+
+    footer {
+        font-size: 1em; /* Ajusta el pie de página */
+    }
+
+    .password-container input {
+        width: 80%; /* Ajusta el tamaño de la caja de texto */
+    }
+
+    .password-container button {
+        font-size: 1em;
+    }
+
+    .mensaje-bonito h2 {
+        font-size: 1.6em; /* Ajusta el título del mensaje */
+    }
+
+    .mensaje-bonito p {
+        font-size: 1em; /* Ajusta el tamaño del mensaje */
+    }
+
+    .mensaje-bonito {
+        padding: 10px;
     }
 }
